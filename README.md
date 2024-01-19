@@ -27,5 +27,5 @@ bash camStart.bash
 ### only audio or video
 `bash micStart.bash` 
 or
-`bash camStart.bash
+`bash camStart.bash`
 
