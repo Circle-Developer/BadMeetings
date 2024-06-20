@@ -30,7 +30,8 @@ with pyvirtualcam.Camera(width=IMG_W, height=IMG_H, fps=60, device='/dev/video9'
         doIt0 = bool(random.randint(0, 1))
         doIt1 = bool(random.randint(0, 1))
         doIt2 = bool(random.randint(0, 1))
-        doIt = (doIt0 and doIt1 and doIt2)
+        doIt3 = bool(random.randint(0, 1))
+        doIt = (doIt0 and doIt1 and doIt2 and doIt3)
 
 
         #cv2.imshow("",result)
