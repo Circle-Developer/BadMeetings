@@ -17,7 +17,7 @@ with pyvirtualcam.Camera(width=IMG_W, height=IMG_H, fps=60, device='/dev/video9'
         ret, frame = cam.read()
         if doIt:
 
-            i=random.randint(50,70)
+            i=random.randint(50,90)
             w, h = (i, i)
             result = cv2.resize(frame, (w, h), interpolation=cv2.INTER_AREA)
             result = cv2.resize(result, (IMG_W, IMG_H), interpolation=cv2.INTER_AREA)
@@ -29,7 +29,8 @@ with pyvirtualcam.Camera(width=IMG_W, height=IMG_H, fps=60, device='/dev/video9'
 
         doIt0 = bool(random.randint(0, 1))
         doIt1 = bool(random.randint(0, 1))
-        doIt = (doIt0 and doIt1)
+        doIt2 = bool(random.randint(0, 1))
+        doIt = (doIt0 and doIt1 and doIt2)
 
 
         #cv2.imshow("",result)
