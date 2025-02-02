@@ -20,8 +20,7 @@ cd BadMeetings
 
 ### Attack both audio and video
 ```
-bash micStart.bash &
-bash camStart.bash
+bash micStart.bash & bash camStart.bash
 ```
 
 ### only audio or video
